@@ -1,5 +1,6 @@
 package com.example.avengers
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -23,6 +24,9 @@ class New_Activity : AppCompatActivity() {
         but=findViewById(R.id.but)
         but.setOnClickListener {
             Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
+            val intent=Intent(this@New_Activity,MainActivity::class.java)
+            startActivity(intent)
         }
+
     }
 }
